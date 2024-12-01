@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Real-Time Cryptocurrency Tracker</h1>
+  </header>
+
+  <!-- User Preferences -->
+  <section id="preferences">
+    <h2>User Preferences</h2>
+    <label for="sort-select">Sort By:</label>
+    <select id="sort-select">
+      <option value="market_cap_high">Market Cap (High to Low)</option>
+      <option value="market_cap_low">Market Cap (Low to High)</option>
+      <option value="price_high">Price (High to Low)</option>
+      <option value="price_low">Price (Low to High)</option>
+      <option value="change_high">24h Price Change (High to Low)</option>
+      <option value="change_low">24h Price Change (Low to High)</option>
+    </select>
+  </section>
+
+  <main>
+    <!-- Cryptocurrency Listing -->
+    <section id="crypto-list">
+      <h2>Crypto Currencies</h2>
+      <div id="crypto-container"></div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison-section">
+      <h2>Comparison</h2>
+      <div id="comparison-container">
+        <p>Select up to 5 cryptocurrencies to compare.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed with the CoinGecko API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
